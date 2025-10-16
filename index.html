@@ -1,36 +1,198 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Mukena Eka Collection</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Mukena Eka Collection</h1>
-    <p>Anggun dan Suci di Setiap Sujud</p>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="brand">
+        <div class="logo">🧕</div>
+        <div>
+          <h1>Mukena Eka Collection</h1>
+          <div class="address">Maruyungsari, Padaherang, Pangandaran</div>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="btn-email" href="mailto:ekanf242@gmail.com">Pesan via Email</a>
+        <button id="navToggle" class="hamburger" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+
+    <nav id="mainNav" class="main-nav">
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#koleksi">Koleksi</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#pemesanan">Cara Pemesanan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section id="koleksi">
-    <h2>Koleksi Mukena</h2>
-    <div class="produk">
-      <img src="assets/mukena1.jpg" alt="Mukena Paris" />
-      <h3>Mukena Paris</h3>
-      <p>Rp 250.000</p>
-      <a href="mailto:mukenaekacollection@gmail.com?subject=Pesan Mukena Paris&body=Halo, saya ingin memesan Mukena Paris.">Pesan via Email</a>
-    </div>
+  <main>
+    <!-- Hero -->
+    <section id="beranda" class="hero">
+      <div class="hero-inner">
+        <h2>Selamat Datang di <span>Mukena Eka Collection</span></h2>
+        <p>Kami menyediakan berbagai pilihan mukena berkualitas tinggi — desain elegan, bahan nyaman, cocok untuk ibadah sehari-hari dan hadiah.</p>
+        <div class="hero-cta">
+          <a href="#koleksi" class="btn-primary">Lihat Koleksi</a>
+          <a href="mailto:ekanf242@gmail.com?subject=Info%20Produk" class="btn-outline">Hubungi via Email</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1585747865916-1e0e7b3b2f5b?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=1b1cfc6c2f74c8c7a2c5f2c0f6b7b3c1" alt="Mukena banner">
+      </div>
+    </section>
 
-    <div class="produk">
-      <img src="assets/mukena2.jpg" alt="Mukena Katun Jepang" />
-      <h3>Mukena Katun Jepang</h3>
-      <p>Rp 300.000</p>
-      <a href="mailto:mukenaekacollection@gmail.com?subject=Pesan Mukena Katun Jepang&body=Halo, saya ingin memesan Mukena Katun Jepang.">Pesan via Email</a>
-    </div>
-  </section>
+    <!-- Keunggulan -->
+    <section id="keunggulan" class="features">
+      <div class="container">
+        <h3>Kenapa Pilih Kami?</h3>
+        <div class="feature-grid">
+          <div class="feature">✔ Kualitas Premium</div>
+          <div class="feature">✔ Harga Bersahabat</div>
+          <div class="feature">✔ Pengiriman Cepat</div>
+          <div class="feature">✔ Motif Eksklusif</div>
+          <div class="feature">✔ Bahan Nyaman</div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>Hubungi kami di: <a href="mailto:mukenaekacollection@gmail.com">mukenaekacollection@gmail.com</a></p>
+    <!-- Koleksi -->
+    <section id="koleksi" class="products">
+      <div class="container">
+        <h3>Koleksi Mukena</h3>
+        <p class="subtitle">Pilih kategori di bawah — klik "Pesan via Email" untuk memesan.</p>
+
+        <div class="products-grid">
+          <!-- 10 produk contoh (kategori) -->
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1545593756-d9960b5b26b3?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=8b6b6b5a1b4f9f3b1bb0" alt="Mukena Katun Jepang">
+            <h4>Mukena Katun Jepang</h4>
+            <p class="price">Rp 250.000</p>
+            <a class="btn" href="mailto:ekanf242@gmail.com?subject=Pesan%20Mukena%20Katun%20Jepang&body=Halo%2C%20saya%20ingin%20memesan%20Mukena%20Katun%20Jepang.%20Ukuran%20%3A%20%0A%20Warna%20%3A%20%0A%20Alamat%20Pengiriman%20%3A%20">Pesan via Email</a>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1583601595804-3e1a6b0b2e91?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7a4b3c2d9876a5b4c3d2" alt="Mukena Bordir Premium">
+            <h4>Mukena Bordir Premium</h4>
+            <p class="price">Rp 350.000</p>
+            <a class="btn" href="mailto:ekanf242@gmail.com?subject=Pesan%20Mukena%20Bordir%20Premium&body=Halo%2C%20saya%20ingin%20memesan%20Mukena%20Bordir%20Premium.%20Ukuran%20%3A%20%0A%20Warna%20%3A%20%0A%20Alamat%20Pengiriman%20%3A%20">Pesan via Email</a>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1516617442634-75371039cb3f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c7f7f3b6c5d4e2a1a2b" alt="Mukena Traveling">
+            <h4>Mukena Traveling</h4>
+            <p class="price">Rp 200.000</p>
+            <a class="btn" href="mailto:ekanf242@gmail.com?subject=Pesan%20Mukena%20Traveling&body=Halo%2C%20saya%20ingin%20memesan%20Mukena%20Traveling.%20Ukuran%20%3A%20%0A%20Warna%20%3A%20%0A%20Alamat%20Pengiriman%20%3A%20">Pesan via Email</a>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1520975698518-2eb2a9f5f3b3?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=4a5a6b7c8d9e0f1a2b3c" alt="Mukena Sutra">
+            <h4>Mukena Sutra</h4>
+            <p class="price">Rp 450.000</p>
+            <a class="btn" href="mailto:ekanf242@gmail.com?subject=Pesan%20Mukena%20Sutra&body=Halo%2C%20saya%20ingin%20memesan%20Mukena%20Sutra.%20Ukuran%20%3A%20%0A%20Warna%20%3A%20%0A%20Alamat%20Pengiriman%20%3A%20">Pesan via Email</a>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1587094316430-4d8e3fa0f0f2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b1c0d9e8f7a6b5c4d3e" alt="Mukena Couple">
+            <h4>Mukena Couple</h4>
+            <p class="price">Rp 550.000 (set)</p>
+            <a class="btn" href="mailto:ekanf242@gmail.com?subject=Pesan%20Mukena%20Couple&body=Halo%2C%20saya%20ingin%20memesan%20Mukena%20Couple.%20Ukuran%20%3A%20%0A%20Warna%20%3A%20%0A%20Alamat%20Pengiriman%20%3A%20">Pesan via Email</a>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1520975918136-2f6e4e6f3b8f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9f8e7d6c5b4a3c2d1e0f" alt="Mukena Anak">
+            <h4>Mukena Anak</h4>
+            <p class="price">Rp 150.000</p>
+            <a class="btn" href="mailto:ekanf242@gmail.com?subject=Pesan%20Mukena%20Anak&body=Halo%2C%20saya%20ingin%20memesan%20Mukena%20Anak.%20Ukuran%20%3A%20%0A%20Warna%20%3A%20%0A%20Alamat%20Pengiriman%20%3A%20">Pesan via Email</a>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5a4b3c2d1e0f9a8b7c6d" alt="Mukena Parasut">
+            <h4>Mukena Parasut</h4>
+            <p class="price">Rp 180.000</p>
+            <a class="btn" href="mailto:ekanf242@gmail.com?subject=Pesan%20Mukena%20Parasut&body=Halo%2C%20saya%20ingin%20memesan%20Mukena%20Parasut.%20Ukuran%20%3A%20%0A%20Warna%20%3A%20%0A%20Alamat%20Pengiriman%20%3A%20">Pesan via Email</a>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1520975918760-3a7e2c2a5b6c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7b6c5d4e3f2a1b0c9d8e" alt="Mukena Batik">
+            <h4>Mukena Batik</h4>
+            <p class="price">Rp 320.000</p>
+            <a class="btn" href="mailto:ekanf242@gmail.com?subject=Pesan%20Mukena%20Batik&body=Halo%2C%20saya%20ingin%20memesan%20Mukena%20Batik.%20Ukuran%20%3A%20%0A%20Warna%20%3A%20%0A%20Alamat%20Pengiriman%20%3A%20">Pesan via Email</a>
+          </article>
+
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1513791056671-1f5e0c9ca5a7?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1c2b3a4d5e6f7a8b9c0d" alt="Mukena Polos Elegant">
+            <h4>Mukena Polos Elegant</h4>
+            <p class="price">Rp 220.000</p>
+            <a class="btn" href="mailto:ekanf242@gmail.com?subject=Pesan%20Mukena%20Polos%20Elegant&body=Halo%2C%20saya%20ingin%20memesan%20Mukena%20Polos%20Elegant.%20Ukuran%20%3A%20%0A%20Warna%20%3A%20%0A%20Alamat%20Pengiriman%20%3A%20">Pesan via Email</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="gallery">
+      <div class="container">
+        <h3>Galeri Foto</h3>
+        <div class="gallery-grid">
+          <img src="https://images.unsplash.com/photo-1520975918136-2f6e4e6f3b8f?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=9f8e7d6c5b4a3c2d1e0f" alt="">
+          <img src="https://images.unsplash.com/photo-1545593756-d9960b5b26b3?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=8b6b6b5a1b4f9f3b1bb0" alt="">
+          <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=5a4b3c2d1e0f9a8b7c6d" alt="">
+          <img src="https://images.unsplash.com/photo-1520975698518-2eb2a9f5f3b3?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=4a5a6b7c8d9e0f1a2b3c" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="testimonials">
+      <div class="container">
+        <h3>Testimoni Pelanggan</h3>
+        <div class="testi-grid">
+          <blockquote>“Mukena-nya lembut, jahitan rapi, bahannya adem. Puas belanja!”<cite>— Rina, Ciamis</cite></blockquote>
+          <blockquote>“Warna sesuai foto, pengiriman cepat. Recommended!”<cite>— Siti, Tasikmalaya</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cara Pemesanan -->
+    <section id="pemesanan" class="howto">
+      <div class="container">
+        <h3>Cara Pemesanan</h3>
+        <ol>
+          <li>Pilih produk pada bagian Koleksi.</li>
+          <li>Klik tombol <strong>Pesan via Email</strong>.</li>
+          <li>Isi detail: produk, ukuran, warna, alamat pengiriman, nomor telepon.</li>
+          <li>Kami akan mengonfirmasi via email & memberikan pilihan pengiriman.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="contact">
+      <div class="container">
+        <h3>Kontak Kami</h3>
+        <p>Email: <a href="mailto:ekanf242@gmail.com">ekanf242@gmail.com</a></p>
+        <p>Alamat: Maruyungsari, Padaherang, Pangandaran</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Mukena Eka Collection • Maruyungsari, Padaherang, Pangandaran</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
